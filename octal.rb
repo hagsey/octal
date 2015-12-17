@@ -15,7 +15,6 @@ class Octal
   def to_decimal
     dec_array = []
     octal.each_index do |digit|
-
       dec_array << octal[digit] * BASE ** digit
     end
     dec_array.reduce(:+)
